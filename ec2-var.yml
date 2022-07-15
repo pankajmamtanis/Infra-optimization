@@ -8,9 +8,9 @@
         name: ec2-slfinal
         description: ec2-slfinal security group
         region: us-east-1
-        aws_access_key: ASIA6BMIV6O7B7KQCTVE
-        aws_secret_key: 4xhgpAcADQtlgopjsmBoZqkPYBdzeS6IVWNPvJ1T
-        security_token: FwoGZXIvYXdzEHsaDNuon8OQUSYuk5iU3yK5AeyBsTnT0IIOwbstz7M1v2fFt30r06V7I74aCBWKUNvh5xFTRtZbBTutvO6o/4doK/Xm8C3/mJcEArpKbtJs5d+K29ski7Gg4yl7V8aZ+a+ke1H5fLsgu5+VYZK00NYm1FSBE5xjfolYDn4T97/zbrPkCZoi29a75HzNwVjnpUUv61Ra/0ZZO93kmWQRX0Ln/UD7USiJ7r68c0fFTeYE++2Cm4x1LdHp+xyO0T9mihMeLVL+ZUObUmdQKO/bxJYGMi0l8HuUSkrDQTTeHq6kSixKLsEec6JtLhXPe6RA2N0qjy0qKiU3k4qzO9/8J98=
+        aws_access_key: ASIA6BMIV6O7FYWXE4HG
+        aws_secret_key: 4Txy0E+MfvukAr/w83pIFEYIxKif5vDSdKvlabI0
+        security_token: FwoGZXIvYXdzEIP//////////wEaDL/XBi/NGQMSZwv3GSK5AdfnaPmuqpm+Vkhhh76CM1BCr/TdsM/Jo2FBMjDfN5X6/F6Pe/EvNqPvU/Q4HSyuihpOxTusEEuqiKXxSKpKy2grYxvgb5t4kOjIs7GQ9en1nIg4OU6Pi7Ge4TDdNpbCZiUHBqfM8rYNxbvs9jldX3Cgg63QTQNaE23Kf4M/Wt5Oqqtw6gILdVLg+pUBLlUZjqL0xFREYul2no+m+oSfF8I0s3SThsEnrJHq8CO9Er7eT3kG0u3Gvi+yKLvOxpYGMi3hlwmlgnsaFA7Y1ULrJ/Ss22V4EcoX1sPHeRrF26ph8UnjERwSyLvmdAX+XXY=
         rules:
           - proto: tcp  # ssh
             from_port: 22
@@ -35,10 +35,9 @@
     ec2_key:
       name: ec2-slfinal-key
       region: us-east-1
-      aws_access_key: ASIA6BMIV6O7B7KQCTVE
-      aws_secret_key: 4xhgpAcADQtlgopjsmBoZqkPYBdzeS6IVWNPvJ1T
-      security_token: FwoGZXIvYXdzEHsaDNuon8OQUSYuk5iU3yK5AeyBsTnT0IIOwbstz7M1v2fFt30r06V7I74aCBWKUNvh5xFTRtZbBTutvO6o/4doK/Xm8C3/mJcEArpKbtJs5d+K29ski7Gg4yl7V8aZ+a+ke1H5fLsgu5+VYZK00NYm1FSBE5xjfolYDn4T97/zbrPkCZoi29a75HzNwVjnpUUv61Ra/0ZZO93kmWQRX0Ln/UD7USiJ7r68c0fFTeYE++2Cm4x1LdHp+xyO0T9mihMeLVL+ZUObUmdQKO/bxJYGMi0l8HuUSkrDQTTeHq6kSixKLsEec6JtLhXPe6RA2N0qjy0qKiU3k4qzO9/8J98=
-      key_material: "{{ lookup('file', '/root/.ssh/id_rsa.pub') }}"
+      aws_access_key: ASIA6BMIV6O7FYWXE4HG
+      aws_secret_key: 4Txy0E+MfvukAr/w83pIFEYIxKif5vDSdKvlabI0
+      security_token: FwoGZXIvYXdzEIP//////////wEaDL/XBi/NGQMSZwv3GSK5AdfnaPmuqpm+Vkhhh76CM1BCr/TdsM/Jo2FBMjDfN5X6/F6Pe/EvNqPvU/Q4HSyuihpOxTusEEuqiKXxSKpKy2grYxvgb5t4kOjIs7GQ9en1nIg4OU6Pi7Ge4TDdNpbCZiUHBqfM8rYNxbvs9jldX3Cgg63QTQNaE23Kf4M/Wt5Oqqtw6gILdVLg+pUBLlUZjqL0xFREYul2no+m+oSfF8I0s3SThsEnrJHq8CO9Er7eT3kG0u3Gvi+yKLvOxpYGMi3hlwmlgnsaFA7Y1ULrJ/Ss22V4EcoX1sPHeRrF26ph8UnjERwSyLvmdAX+XXY=      key_material: "{{ lookup('file', '/root/.ssh/id_rsa.pub') }}"
     
 
   - name: Create an EC2 instance
@@ -51,9 +50,9 @@
       wait: yes
       instance_tags:
           Name: ec2-slfinal-key
-      aws_access_key: ASIA6BMIV6O7B7KQCTVE
-      aws_secret_key: 4xhgpAcADQtlgopjsmBoZqkPYBdzeS6IVWNPvJ1T
-      security_token: FwoGZXIvYXdzEHsaDNuon8OQUSYuk5iU3yK5AeyBsTnT0IIOwbstz7M1v2fFt30r06V7I74aCBWKUNvh5xFTRtZbBTutvO6o/4doK/Xm8C3/mJcEArpKbtJs5d+K29ski7Gg4yl7V8aZ+a+ke1H5fLsgu5+VYZK00NYm1FSBE5xjfolYDn4T97/zbrPkCZoi29a75HzNwVjnpUUv61Ra/0ZZO93kmWQRX0Ln/UD7USiJ7r68c0fFTeYE++2Cm4x1LdHp+xyO0T9mihMeLVL+ZUObUmdQKO/bxJYGMi0l8HuUSkrDQTTeHq6kSixKLsEec6JtLhXPe6RA2N0qjy0qKiU3k4qzO9/8J98=
+      aws_access_key: ASIA6BMIV6O7FYWXE4HG
+      aws_secret_key: 4Txy0E+MfvukAr/w83pIFEYIxKif5vDSdKvlabI0
+      security_token: FwoGZXIvYXdzEIP//////////wEaDL/XBi/NGQMSZwv3GSK5AdfnaPmuqpm+Vkhhh76CM1BCr/TdsM/Jo2FBMjDfN5X6/F6Pe/EvNqPvU/Q4HSyuihpOxTusEEuqiKXxSKpKy2grYxvgb5t4kOjIs7GQ9en1nIg4OU6Pi7Ge4TDdNpbCZiUHBqfM8rYNxbvs9jldX3Cgg63QTQNaE23Kf4M/Wt5Oqqtw6gILdVLg+pUBLlUZjqL0xFREYul2no+m+oSfF8I0s3SThsEnrJHq8CO9Er7eT3kG0u3Gvi+yKLvOxpYGMi3hlwmlgnsaFA7Y1ULrJ/Ss22V4EcoX1sPHeRrF26ph8UnjERwSyLvmdAX+XXY=      key_material: "{{ lookup('file', '/root/.ssh/id_rsa.pub') }}"
 
       count_tag: Name
       exact_count: 1
