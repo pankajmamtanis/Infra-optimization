@@ -57,6 +57,6 @@
 
       count_tag: Name
       exact_count: 1
-      vpc_subnet_id: subnet-0ae8268246e07503a
+      vpc_subnet_id: subnet-0c7ed4dbe3648fb40
       assign_public_ip: yes
     register: ec2
