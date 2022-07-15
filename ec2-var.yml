@@ -35,6 +35,9 @@
     ec2_key:
       name: ec2-slfinal-key
       region: us-east-1
+      aws_access_key: ASIA6BMIV6O7B7KQCTVE
+      aws_secret_key: 4xhgpAcADQtlgopjsmBoZqkPYBdzeS6IVWNPvJ1T
+      security_token: FwoGZXIvYXdzEHsaDNuon8OQUSYuk5iU3yK5AeyBsTnT0IIOwbstz7M1v2fFt30r06V7I74aCBWKUNvh5xFTRtZbBTutvO6o/4doK/Xm8C3/mJcEArpKbtJs5d+K29ski7Gg4yl7V8aZ+a+ke1H5fLsgu5+VYZK00NYm1FSBE5xjfolYDn4T97/zbrPkCZoi29a75HzNwVjnpUUv61Ra/0ZZO93kmWQRX0Ln/UD7USiJ7r68c0fFTeYE++2Cm4x1LdHp+xyO0T9mihMeLVL+ZUObUmdQKO/bxJYGMi0l8HuUSkrDQTTeHq6kSixKLsEec6JtLhXPe6RA2N0qjy0qKiU3k4qzO9/8J98=
       key_material: "{{ lookup('file', '/root/.ssh/id_rsa.pub') }}"
     
 
