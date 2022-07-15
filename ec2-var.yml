@@ -37,7 +37,7 @@
       region: us-east-1
       aws_access_key: ASIA6BMIV6O7FYWXE4HG
       aws_secret_key: 4Txy0E+MfvukAr/w83pIFEYIxKif5vDSdKvlabI0
-      security_token: FwoGZXIvYXdzEIP//////////wEaDL/XBi/NGQMSZwv3GSK5AdfnaPmuqpm+Vkhhh76CM1BCr/TdsM/Jo2FBMjDfN5X6/F6Pe/EvNqPvU/Q4HSyuihpOxTusEEuqiKXxSKpKy2grYxvgb5t4kOjIs7GQ9en1nIg4OU6Pi7Ge4TDdNpbCZiUHBqfM8rYNxbvs9jldX3Cgg63QTQNaE23Kf4M/Wt5Oqqtw6gILdVLg+pUBLlUZjqL0xFREYul2no+m+oSfF8I0s3SThsEnrJHq8CO9Er7eT3kG0u3Gvi+yKLvOxpYGMi3hlwmlgnsaFA7Y1ULrJ/Ss22V4EcoX1sPHeRrF26ph8UnjERwSyLvmdAX+XXY=      key_material: "{{ lookup('file', '/root/.ssh/id_rsa.pub') }}"
+      security_token: FwoGZXIvYXdzEIP//////////wEaDL/XBi/NGQMSZwv3GSK5AdfnaPmuqpm+Vkhhh76CM1BCr/TdsM/Jo2FBMjDfN5X6/F6Pe/EvNqPvU/Q4HSyuihpOxTusEEuqiKXxSKpKy2grYxvgb5t4kOjIs7GQ9en1nIg4OU6Pi7Ge4TDdNpbCZiUHBqfM8rYNxbvs9jldX3Cgg63QTQNaE23Kf4M/Wt5Oqqtw6gILdVLg+pUBLlUZjqL0xFREYul2no+m+oSfF8I0s3SThsEnrJHq8CO9Er7eT3kG0u3Gvi+yKLvOxpYGMi3hlwmlgnsaFA7Y1ULrJ/Ss22V4EcoX1sPHeRrF26ph8UnjERwSyLvmdAX+XXY=
     
 
   - name: Create an EC2 instance
@@ -53,7 +53,7 @@
           Name: ec2-slfinal-key
       aws_access_key: ASIA6BMIV6O7FYWXE4HG
       aws_secret_key: 4Txy0E+MfvukAr/w83pIFEYIxKif5vDSdKvlabI0
-      security_token: FwoGZXIvYXdzEIP//////////wEaDL/XBi/NGQMSZwv3GSK5AdfnaPmuqpm+Vkhhh76CM1BCr/TdsM/Jo2FBMjDfN5X6/F6Pe/EvNqPvU/Q4HSyuihpOxTusEEuqiKXxSKpKy2grYxvgb5t4kOjIs7GQ9en1nIg4OU6Pi7Ge4TDdNpbCZiUHBqfM8rYNxbvs9jldX3Cgg63QTQNaE23Kf4M/Wt5Oqqtw6gILdVLg+pUBLlUZjqL0xFREYul2no+m+oSfF8I0s3SThsEnrJHq8CO9Er7eT3kG0u3Gvi+yKLvOxpYGMi3hlwmlgnsaFA7Y1ULrJ/Ss22V4EcoX1sPHeRrF26ph8UnjERwSyLvmdAX+XXY=      key_material: "{{ lookup('file', '/root/.ssh/id_rsa.pub') }}"
+      security_token: FwoGZXIvYXdzEIP//////////wEaDL/XBi/NGQMSZwv3GSK5AdfnaPmuqpm+Vkhhh76CM1BCr/TdsM/Jo2FBMjDfN5X6/F6Pe/EvNqPvU/Q4HSyuihpOxTusEEuqiKXxSKpKy2grYxvgb5t4kOjIs7GQ9en1nIg4OU6Pi7Ge4TDdNpbCZiUHBqfM8rYNxbvs9jldX3Cgg63QTQNaE23Kf4M/Wt5Oqqtw6gILdVLg+pUBLlUZjqL0xFREYul2no+m+oSfF8I0s3SThsEnrJHq8CO9Er7eT3kG0u3Gvi+yKLvOxpYGMi3hlwmlgnsaFA7Y1ULrJ/Ss22V4EcoX1sPHeRrF26ph8UnjERwSyLvmdAX+XXY=
 
       count_tag: Name
       exact_count: 1
